@@ -2,10 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: https://transcendent-marigold-8d7f00.netlify.app/
+
 media_folder: "images"
 public_folder: "/images"
-
-site_url: https://transcendent-marigold-8d7f00.netlify.app/admin/
 
 collections:
   - name: "images"
@@ -15,7 +15,8 @@ collections:
     slug: "{{filename}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "file", widget: "image"}
+      - {label: "Image", name: "image", widget: "image"}
+
   - name: "videos"
     label: "Videos"
     folder: "videos"
