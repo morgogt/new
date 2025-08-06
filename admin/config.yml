@@ -5,7 +5,7 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
-site_url: https://transcendent-marigold-8d7f00.netlify.app/
+site_url: https://transcendent-marigold-8d7f00.netlify.app/admin/
 
 collections:
   - name: "images"
