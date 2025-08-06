@@ -2,26 +2,15 @@ backend:
   name: git-gateway
   branch: main
 
-site_url: https://transcendent-marigold-8d7f00.netlify.app/
-
-media_folder: "images"
-public_folder: "/images"
+media_folder: "uploads"
+public_folder: "/uploads"
 
 collections:
-  - name: "images"
-    label: "Images"
-    folder: "images"
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
     create: true
-    slug: "{{filename}}"
+    slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-
-  - name: "videos"
-    label: "Videos"
-    folder: "videos"
-    create: true
-    slug: "{{filename}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Embed Code", name: "embed", widget: "text"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
