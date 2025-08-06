@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "images"
+    label: "Images"
+    folder: "images"
+    create: true
+    slug: "{{filename}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "file", widget: "image"}
+  - name: "videos"
+    label: "Videos"
+    folder: "videos"
+    create: true
+    slug: "{{filename}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Embed Code", name: "embed", widget: "text"}
