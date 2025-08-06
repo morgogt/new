@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+  
+site: https://transcendent-marigold-8d7f00.netlify.app/
 
 media_folder: "images"
 public_folder: "/images"
